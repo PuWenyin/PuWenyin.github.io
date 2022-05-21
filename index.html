@@ -6,8 +6,9 @@
 <script>
 
 function sendRequest() {
-    if (new Date().getHours() >= 12)
-    window.location = 'https://reservation.bupt.edu.cn/index.php/Wechat/Booking/confirm_booking?area_id=5985&td_id=15415_2022052205&query_date=20220522&country_id=0';
+    if (new Date().getHours() >= 12) {
+        window.location = 'https://reservation.bupt.edu.cn/index.php/Wechat/Booking/confirm_booking?area_id=5985&td_id=15415_2022052205&query_date=20220522&country_id=0';
+    }
 }
 
 setInterval(sendRequest, 10)
